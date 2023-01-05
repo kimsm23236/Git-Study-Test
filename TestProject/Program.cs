@@ -2,19 +2,7 @@
 
 namespace TestProject
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            // 오류가 날 일이 없는 포인트를 저장해 놓는것이 중요
-            Console.WriteLine("Hello, World!");
-            // 바꿈
-
-            Ruler ruler = new Ruler(10);
-            ruler.Run();
-        }
-    }
-
+    // { Alpha Branch Modified 2023 01 05
     public class Ruler
     {
         private const float ONE_INCH = 2.54f;
@@ -34,4 +22,20 @@ namespace TestProject
             Console.WriteLine($"{this.Centimeter}cm 는 {Inch}inch 입니다.");
         }
     }
+    // } Alpha Branch Modified 2023 01 05
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            // 오류가 날 일이 없는 포인트를 저장해 놓는것이 중요
+            Console.WriteLine("Hello, World!");
+            // 바꿈
+
+            Ruler ruler = new Ruler(10);
+            ruler.Run();
+        }
+    }
+
+    
 }
