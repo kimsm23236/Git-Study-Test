@@ -2,7 +2,29 @@
 
 namespace TestProject
 {
-    // { Alpha Branch Modified 2023 01 05
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            // 오류가 날 일이 없는 포인트를 저장해 놓는것이 중요
+
+            // 바꿈
+
+            // { 2023.01.05. Add new feature user input
+            string userInput = string.Empty;
+            Console.WriteLine("This program convert Cm to Inch");
+            Console.Write("Input Cm Value : ");
+            userInput = Console.ReadLine();
+
+            int cmInput = 0;
+            int.TryParse(userInput, out cmInput);
+
+            Ruler ruler = new Ruler(cmInput);
+            // } 2023.01.05. Add new feature user input
+            ruler.Run();
+        }
+    }
+
     public class Ruler
     {
         private const float ONE_INCH = 2.54f;
@@ -22,7 +44,6 @@ namespace TestProject
             Console.WriteLine($"{this.Centimeter}cm 는 {Inch}inch 입니다.");
         }
     }
-    // } Alpha Branch Modified 2023 01 05
 
     public class Program
     {
