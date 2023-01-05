@@ -33,5 +33,12 @@ namespace TestProject
         {
             Console.WriteLine($"{this.Centimeter}cm 는 {Inch}inch 입니다.");
         }
+
+        // { 2023. 01. 05 Add new feature set inch funcfion / gamma
+        private void SetInch(float inchValue)
+        {
+            Centimeter = (int)(inchValue / ONE_INCH);
+        }
+        // } 2023. 01. 05 Add new feature set inch funcfion / gamma
     }
 }
